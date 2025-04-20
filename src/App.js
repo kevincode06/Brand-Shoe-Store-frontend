@@ -8,6 +8,7 @@ import CreateShoe from './pages/CreateShoe';
 import AdminUsers from './pages/AdminUsers';
 import ProtectedRoute from './routes/ProtectedRoute'; 
 import Navbar from './components/Navbar';
+import ShoeGallery from './components/ShoeGallery';
 
 const App = () => {
   return (
@@ -24,6 +25,7 @@ const App = () => {
             <Route path="/dashboard" element={<Dashboard />} />
             <Route path="/shoes/create" element={<CreateShoe />} />
             <Route path="/admin/users" element={<AdminUsers />} />
+            <Route path="/admin/gallery" element={<ShoeGallery />} /> {/* ✅ NEW ROUTE */}
           </Route>
 
           {/* Redirects */}
